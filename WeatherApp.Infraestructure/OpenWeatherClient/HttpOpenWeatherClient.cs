@@ -18,6 +18,7 @@ namespace WeatherApp.Infrastructure.OpenWeatherClient
             DateTime day = new DateTime(1970, 1, 1, 0, 0, 0, 0, DateTimeKind.Utc).ToLocalTime();
             day = day.AddSeconds(milisegundos).ToLocalTime();
             return day;
+
         }
 
         public string GetImageLocation(Weather w)
